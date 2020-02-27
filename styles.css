@@ -1,0 +1,147 @@
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
+/*
+    ADDITIONAL DEMO STYLE, NOT IMPORTANT TO MAKE THINGS WORK BUT TO MAKE IT A BIT NICER :)
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #C4C4C4;
+}
+
+.painel {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color:#FCDE32;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    background-image: url(img/Fundo.png);
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#sidebar {
+    /* don't forget to add all the previously mentioned styles here too */
+    background-image: url(img/Fundo.png);
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background-image: url(img/Fundo.png);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul p {
+    color: #FCDE32;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background-image: url(img/Fundo.png);
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background-image: url(img/Fundo.png);
+}
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background-image: url(img/Fundo.png);
+}
+.bordaempresa { 
+    width: 71px;
+    height: 21px;
+    left: 212px;
+    top: 350px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    background: #FCDE32;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #202F36;
+}
+#menu {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 57px;
+    height: 28px;
+    left: 218px;
+    top: 577px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+#menu img{
+    float: left;
+}
